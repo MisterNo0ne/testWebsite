@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+    PLEASE NOTE
+    EVERYTHING THAT HAS TO DEAL WITH THE NAVBAR
+    SHOULD BE COMPLETELY IGNORED
+    IT IS A MESS
+    DW ABT IT
+    JUST TRUST THAT IT WORKS
+    AND IF IT DOESNT THEN DONT TELL ANYONE
+    IF YOU CANT SEE IT THEN IT CANT SEE YOU
+    
+*/
+
+.navbar {
+    background-color: lightgrey;
+    width: 100%;
+
+    /* height: 74px; */
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none; /*deletes the bullet points*/
+    display: flex; /*creates the flex box, so everything is on the same level*/
+
+    margin: 0; /*to get rid of the ugly line above the navbar*/
+    padding: 0;
+}
+
+.navbar ul li a {
+    /* float: left; */
+    display: flex;
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+
+    font-size: 20px;
+    text-decoration: none; /* gets rid of the underline */
+
+    color: black;
+}
+
+#logo {
+    /* square-ify */
+    width: 74px;
+    height: 74px;
+    /* next two lines will center the text if its in square form */
+    display: flex;
+    justify-content: center;
+
+    background-color: #FF89A3;
+    margin-left: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarElemChunk {
+    display: flex;
+    margin: 12px;
+    /* padding: 10px; */
+}
+
+.navbarElemChunk li {
+    padding: 10px;
+    margin-inline-start: 20px;
+    margin-right: 15px;
+    
+    display: flex;
+    justify-content: center;
+
+    border-radius: 15px;
+    border: 3px solid aliceblue;
+    background-color: aliceblue;
+}
+
+.navbarElemChunk li a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#navbarElem1 {
+    transition: all 0.3s;
+}
+#navbarElem1:hover {
+    border: 3px solid #5FC45C;
+}
+
+#navbarElem2 {
+    transition: all 0.3s;
+}
+#navbarElem2:hover {
+    border: 3px solid #007FDB;
+}
+
+#navbarElem3 {
+    transition: all 0.3s;
+}
+#navbarElem3:hover {
+    border: 3px solid #C66643;
+}
+
+#navbarElem4 {
+    transition: all 0.3s;
+}
+#navbarElem4:hover {
+    border: 3px solid #9C68C4;
+}
+
+
+
+body {
+    background-image: url(background1.png);
+    background-size: 15%;
+}
+
+
+.important {
+    font-weight: bold;
+}
+
+.main {
+    padding-left: 10px;
+}
