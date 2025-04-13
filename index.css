@@ -1,3 +1,7 @@
+:root {
+    --white: #fafafa;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -76,8 +80,8 @@ body {
     justify-content: center;
 
     border-radius: 15px;
-    border: 3px solid aliceblue;
-    background-color: aliceblue;
+    border: 3px solid --white;
+    background-color: --white;
 }
 
 .navbarElemChunk li a {
@@ -113,16 +117,41 @@ body {
     border: 3px solid #9C68C4;
 }
 
+body, html {
+    margin: 0;
+    height: 100%;
+}
 
+.background {
+    position: relative;
+    background: url('Great Salt Lake.png') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust tint here */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: --white;
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 2rem;
+}
 
 body {
     background-image: url(background1.png);
     background-size: 15%;
-}
-
-
-.important {
-    font-weight: bold;
 }
 
 .main {
