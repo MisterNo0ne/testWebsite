@@ -159,8 +159,8 @@ body {
 }
 
 .button-container button {
-    font-size: 1em;
-    padding: 12px 24px;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
     background-color: var(--blue);
     color: var(--white); /* text color */
     border-radius: 4px;
