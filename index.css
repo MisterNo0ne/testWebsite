@@ -1,5 +1,11 @@
 :root {
-    /* --white: #fafafa; */
+    --red: #E55812;
+    --orange: #FF9B42;
+    --yellow: #F2BB05;
+    --blue: #386FA4;
+    --navy: #133C55;
+    --black: #0D1821;
+    --white: #FAFAFA;
 }
 
 * {
@@ -25,7 +31,7 @@ body {
 */
 
 .navbar {
-    background-color: lightgrey;
+    background-color: var(--white);
     width: 100%;
 
     /* height: 74px; */
@@ -57,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
 
-    background-color: #FF89A3;
+    background-color: --red;
     margin-left: 10px;
     margin: 0;
     padding: 0;
@@ -78,12 +84,12 @@ body {
 
 .navbarElemChunk li a {
     color: black;
-    font-size: 20;
+    font-size: 1.5em;
     text-decoration: none; /* gets rid of the underline */
     padding-left: 0.3em;
     padding-right: 0.3em;
     font-weight: 600;
-    background-color: --white;
+    background-color: var(--white);
 
     transition: background-color 0.3s;
 }
@@ -129,7 +135,7 @@ body {
 }
 
 .home h1, .home h2 {
-    color: white;
+    color: var(--white);
     margin: 1.5em;
 }
 
@@ -142,4 +148,37 @@ body {
     font-size: 2em;
     max-width: 80vw;
     margin-bottom: 1em;
+}
+
+.button-container {
+    font-size: 2em;
+    display: flex;
+    gap: 3em; /* space between buttons */
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.button-container button {
+    font-size: 1em;
+    padding: 12px 24px;
+    background-color: var(--blue);
+    color: var(--white); /* text color */
+    border-radius: 4px;
+    border: none;
+    cursor: pointer; /* makes cursor look like theres stuff to click */
+
+    /* parallelogram code */
+    transform: skew(-5deg);
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 3px var(--navy);
+}
+
+.button-container button span {
+    display: inline-block;
+    transform: skew(5deg); /* text is normal */
+    transition: all 0.3s ease;
+}
+
+.button-container button:hover span {
+    transform: skew(-1deg);
 }
