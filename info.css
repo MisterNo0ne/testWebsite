@@ -98,13 +98,113 @@ body {
 }
 
 .background-wrapper {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--navy);
+    background: linear-gradient(to top, var(--navy), #112232);
     color: var(--white);
     
-    padding-top: 2em;
-    padding-bottom: 1.5em;
+    padding-top: 6em;
+    padding-bottom: 4em;
+
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.background-wrapper h1 {
+    font-size: 6em;
+    margin-bottom: 0.6em;
+    transition: text-shadow 0.3s ease;
+}
+
+.background-wrapper h1:hover {
+    text-shadow: 0.05em 0.1em 0.1em rgba(0, 0, 0, 0.9);
+}
+
+.background-wrapper h2 {
+    width: 75vw;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.9);
+}
+
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.left-part {
+    width: 25vw;
+}
+
+.infographic {
+    width: 25vw;
+    aspect-ratio: 1/1;
+
+    background-image: url('modern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 1em;
+}
+
+.source-info {
+    color: rgb(80, 80, 80);
+}
+
+.source-info:hover {
+    color: rgb(0, 0, 0);
+}
+
+.source-info .arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  color: inherit;
+
+  transition: all 0.3s;
+}
+
+.source-info:hover .arrow {
+  transform: scale(1.3);
+}
+
+.source-info a {
+    text-decoration: none;
+    box-shadow: inset 0 -0em 0 0 rgb(0, 0, 0);
+    color: inherit;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.source-info:hover a {
+    box-shadow: inset 0 -0.1em 0 0 rgb(0, 0, 0);
+}
+
+.right-part {
+    width: 45vw;
+}
+
+.right-part h1 {
+    padding-bottom: 0.5em;
+}
+
+.right-part p {
+    font-weight: 600;
+    padding-bottom: 0.5em;
+}
+
+.info-group {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    width: 100%;
+}
+
+#problem {
+    background-color: var(--orange);
+}
+
+#cause {
+    background-color: var(--blue);
 }
