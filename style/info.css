@@ -109,7 +109,8 @@ html {
 
 .right-part p {
     font-weight: 600;
-    padding-bottom: 0.5em;
+    padding-bottom: 1.5em;
+    text-indent: 3em;
 }
 
 .info-group {

@@ -65,37 +65,29 @@ html {
     margin-top: 3em;
 }
 
-.button-container button {
+.button-container .button-link {
     font-size: 0.9em;
     font-weight: 500;
     padding: 0.5em 1em;
-    width: 22%;
+    width: 22vw;
 
-    background-color: var(--lblue);
+    background-color: var(--white);
     color: var(--black);
 
     border-radius: 9999px;
-    border: 0.12em solid transparent;
+    border-color: var(--black);
+    border: 0.12em solid;
     cursor: pointer;
 
-    transition: border-color 0.5s;
+    transition: border-color 0.5s, background-color 0.3s, color 0.3s;
 }
 
-.button-container button:hover {
-    border-color: var(--black);
+.button-container .button-link:hover {
+  border-color: var(--navy);
+  background-color: var(--navy);
+  color: var(--white);
+  text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.3);
 }
-
-.button-container button a {
-    text-decoration: none;
-    color: inherit;
-
-    transition: all 0.3s;
-}
-
-.button-container button:hover a {
-    text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.3);
-}
-
 
 .how-to {
     width: 100%;
@@ -233,17 +225,28 @@ html {
 }
 
 .org-details a {
-    position: relative;
-    left: 1em;
-    
-    font-size: 1.1em;
-    text-decoration: none;
-    color: var(--white);
-    box-shadow: inset 0 -0em 0 0 rgb(0, 0, 0);
+  position: relative;
+  display: inline-block;
+  left: 1em;
 
-    transition: box-shadow 0.3s;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: var(--white);
+
+  transition: color 0.3s;
 }
 
-.org-details a:hover {
-    box-shadow: inset 0 -0.1em 0 0 rgb(0, 0, 0);
+.org-details a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15em;
+  height: 0.1em;
+  width: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.org-details a:hover::after {
+  width: 100%;
 }
