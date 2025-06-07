@@ -213,3 +213,37 @@ html {
 #not-youth {
     background-color: var(--blue);
 }
+
+.logo-picture img {
+    width: 20vw;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.org-details {
+    width: 40vw;
+}
+
+.org-details p {
+    font-size:1em;
+    margin-top: 0.9em;
+    margin-bottom: 0.7em;
+}
+
+.org-details a {
+    position: relative;
+    left: 1em;
+    
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--white);
+    box-shadow: inset 0 -0em 0 0 rgb(0, 0, 0);
+
+    transition: box-shadow 0.3s;
+}
+
+.org-details a:hover {
+    box-shadow: inset 0 -0.1em 0 0 rgb(0, 0, 0);
+}
