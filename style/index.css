@@ -14,7 +14,7 @@ html {
 
 .background {
     position: relative;
-    background: url('images/Great Salt Lake.png') no-repeat center center/cover;
+    background: url('../images/Great Salt Lake.png') no-repeat center center/cover;
     height: 150vh; /* navbar is 74px tall */
     width: 100%;
     overflow: hidden;
