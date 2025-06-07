@@ -1,0 +1,14 @@
+:root {
+    --red: #E55812;
+    --orange: #FF9B42;
+    --yellow: #F2BB05;
+    --blue: #386FA4;
+    --navy: #133C55;
+    --black: #0D1821;
+    --white: #FAFAFA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

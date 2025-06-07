@@ -1,0 +1,215 @@
+:root {
+    --red: #E55812;
+    --orange: #FF9B42;
+    --yellow: #F2BB05;
+    --lblue:#5395d2;
+    --blue: #386FA4;
+    --navy: #133C55;
+    --black: #0D1821;
+    --grey: #617f9b;
+    --white: #FAFAFA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.main a {
+    text-decoration: none;
+    color: #86b6dd;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+.topbar {
+    background: linear-gradient(to bottom, var(--blue), var(--white));
+    color: var(--black);
+    
+    padding-top: 6em;
+    padding-bottom: 4em;
+
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topbar h1 {
+    font-size: 6em;
+    margin-bottom: 0.6em;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
+    transition: text-shadow 0.3s ease;
+}
+
+.topbar h1:hover {
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.3);
+}
+
+.topbar h2 {
+    color: var(--black);
+    width: 75vw;
+    margin: 0 auto;
+    line-height: 1.8;
+    /* text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.9); */
+}
+
+.button-container {
+    font-size: 2em;
+    display: flex;
+    gap: 5.5%;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.button-container button {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    width: 22%;
+
+    background-color: var(--lblue);
+    color: var(--black);
+
+    border-radius: 9999px;
+    border: 0.12em solid transparent;
+    cursor: pointer;
+
+    transition: border-color 0.5s;
+}
+
+.button-container button:hover {
+    border-color: var(--black);
+}
+
+.button-container button a {
+    text-decoration: none;
+    color: inherit;
+
+    transition: all 0.3s;
+}
+
+.button-container button:hover a {
+    text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.3);
+}
+
+
+.how-to {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: var(--white);
+}
+
+.how-to h1 {
+    transform: skew(-12deg);
+    width: 100%;
+    text-align: center;
+
+    tab-size:8;
+
+    transition: transform 0.3s;
+}
+
+.how-to h1:hover {
+    transform: skew(-25deg);
+}
+
+
+.flexbox {
+    display: flex;
+    gap: 5.5%;
+    justify-content: center;
+
+    margin-top: 6vmin;
+}
+
+.fun-picture {
+    width: 20vw;
+    height: 20vw;
+
+    background-image: url('../images/modern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    width: 45vw;
+}
+
+.info-box-container {
+    margin-bottom: 1em;
+}
+
+.school-info {
+    background-color: var(--grey);
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+    cursor:pointer;
+    user-select: none; /* makes the text unselectable. Remember this for later! */
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: background-color 0.3s;
+}
+
+.school-info.open {
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+.school-info:hover {
+    background-color: #a5b4ce;
+}
+
+.plus-icon {
+    position: relative;
+    top: -0.03em;
+    font-size: 1.5em;
+}
+
+.info-content {
+    max-height: 0;
+    overflow: hidden;
+
+    background-color: #2f4353;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+
+    transition: padding 0.3s, max-height 0.3s;
+}
+
+.info-content.open {
+    padding: 0.5em;
+    max-height: 5em;
+}
+
+.info-content a {
+    color: inherit;
+}
+
+.blurb p {
+    margin-top: 1em;
+    width: 60vw;
+    position: relative;
+    left: 20vw;
+}
+
+#join {
+    background-color: var(--blue);
+}
+
+#start {
+    background-color: var(--navy);
+}
+
+#not-youth {
+    background-color: var(--blue);
+}

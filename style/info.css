@@ -8,93 +8,8 @@
     --white: #FAFAFA;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    height: 100%;
-}
-
-/*
-    PLEASE NOTE
-    EVERYTHING THAT HAS TO DEAL WITH THE NAVBAR
-    SHOULD BE COMPLETELY IGNORED
-    IT IS A MESS
-    DW ABT IT
-    JUST TRUST THAT IT WORKS
-    AND IF IT DOESNT THEN DONT TELL ANYONE
-    IF YOU CANT SEE IT THEN IT CANT SEE YOU
-    
-*/
-
-.navbar {
-    background-color: var(--white);
-    width: 100%;
-
-    /* height: 74px; */
-    /* margin: 0; */
-    /* padding: 0; */
-}
-
-.navbar ul {
-    list-style-type: none; /*deletes the bullet points*/
-    display: flex; /*creates the flex box, so everything is on the same level*/
-
-    margin: 0; /*to get rid of the ugly line above the navbar*/
-    padding: 0;
-}
-
-.navbar ul li a {
-    /* float: left; */
-    display: flex;
-    align-items: center; /* vertical center */
-    justify-content: center; /* horizontal center */
-}
-
-#logo {
-    /* square-ify */
-    width: 74px;
-    height: 74px;
-    /* next two lines will center the text if its in square form */
-    display: flex;
-    justify-content: center;
-
-    background-color: --red;
-    margin-left: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbarElemChunk {
-    display: flex;
-    margin: 1em;
-}
-
-.navbarElemChunk li {
-    padding: 1%;
-    margin-inline-start: 5%;
-    
-    display: flex;
-    justify-content: center;
-}
-
-.navbarElemChunk li a {
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none; /* gets rid of the underline */
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    font-weight: 600;
-    background-color: var(--white);
-
-    transition: background-color 0.3s;
-}
-
-.navbarElemChunk li a:hover {
-    background-color: #e0e0e0;
+html {
+  scroll-behavior: smooth;
 }
 
 .background-wrapper {
@@ -141,7 +56,7 @@ body {
     width: 25vw;
     aspect-ratio: 1/1;
 
-    background-image: url('modern.png');
+    background-image: url('../images/modern.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

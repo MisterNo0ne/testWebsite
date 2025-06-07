@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stolen from the p5js web editor -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/connect.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 </head>
 <body>
     <!-- navbar, css stolen from https://www.educative.io/answers/how-to-create-a-navbar-using-css -->
     <nav class="navbar">
         <ul>
-            <li id="logo"><a href="index.html"><img src="tempLogo.png"></img></a></li>
+            <li id="logo"><a href="index.html"><img src="images/ycgslLogo.png"></img></a></li>
             <div class="navbarElemChunk">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="info.html">GSL</a></li>
@@ -24,7 +25,84 @@
     </nav>
 
     <div class="main">
+        <div class="topbar">
+            <h1>JOIN US</h1>
+            <h2>Our organization is made up of chapters across local schools.</h2>
+            <h2>To join, contact one of our existing chapters at your institution to get organized. Or if you don't have a chapter yet, start one yourself!</h2>
+            <h2>And, if you're not in school, feel free to check out other organizations we work with who are fighting for GSL.</h2>
+            <div class="button-container">
+                <button><a href="#join">Join a Chapter</a></button>
+                <button><a href="#start">Start a Chapter</a></button>
+                <button><a href="#not-youth">Other Org's</a></button>
+            </div>
+        </div>
+        <div class="how-to" id="join">
+            <h1>➜&nbsp;&nbsp;&nbsp;JOIN A CHAPTER</h1> <!-- the &nbsp;&nbsp;&nbsp; is a tab -->
+            <div class="flexbox">
+                <div class="fun-picture"></div>
+                <div class="text">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Here's a list of the chapters we already have. If you can't find yours, 
+                        <a href="#start">click here</a>.
+                    </p> <!--lmfao-->
+                    
+                    <div class="info-box-container">
+                        <div class="school-info" onclick="toggleInfo(this)">
+                            <span class="school-label">Skyline High School</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="info-content">
+                            <span class="school-details">Here should be instructions on how to contact Skyline leaders.</span>
+                        </div>
+                    </div>
+                    <div class="info-box-container">
+                        <div class="school-info" onclick="toggleInfo(this)">
+                            <span class="school-label">idk what chapters we have lol</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="info-content">
+                            <span class="school-details">Lorem ipsum docet dolor doloremque</span>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="how-to" id="start">
+            <h1>➜&nbsp;&nbsp;&nbsp;START A CHAPTER</h1>
+            <div class="blurb"><p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Thanks for being willing to put in the work to grow the movement! 
+                We recommend talking to other leaders so they can help you along the process. 
+                And, we can direct people from this website to grow your chapter! Our information can be found 
+                <a href="about.html">here</a>.
+            </p></div>
+        </div>
+        <div class="how-to" id="not-youth">
+            <h1>➜&nbsp;&nbsp;&nbsp;OTHER ORGANIZATIONS</h1> 
+            <div class="blurb"><p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                There are plenty of organizations pushing for the same goals as us!<br>Here's an incomplete list:
+            </p></div>
+
+            <div class="org-container">
+
+            </div>
+
+        </div>
     </div>
+
+    <script>
+        function toggleInfo(box) {
+            const content = box.nextElementSibling; //checks whether open
+            const icon = box.querySelector('.plus-icon'); //checks for the info icon element
+
+            content.classList.toggle('open'); //flips being open or not for container
+            box.classList.toggle('open'); //flips being open or not for box
+            icon.textContent = content.classList.contains('open') ? '−' : '+'; //changes based on openness
+        }
+    </script>
+
 </body>
 </html>

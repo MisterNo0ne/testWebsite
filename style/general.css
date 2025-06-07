@@ -1,0 +1,104 @@
+:root {
+    --red: #E55812;
+    --orange: #FF9B42;
+    --yellow: #F2BB05;
+    --blue: #386FA4;
+    --navy: #133C55;
+    --black: #0D1821;
+    --white: #FAFAFA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+}
+
+/*
+    PLEASE NOTE
+    EVERYTHING THAT HAS TO DEAL WITH THE NAVBAR
+    SHOULD BE COMPLETELY IGNORED
+    IT IS A MESS
+    DW ABT IT
+    JUST TRUST THAT IT WORKS
+    AND IF IT DOESNT THEN DONT TELL ANYONE
+    IF YOU CANT SEE IT THEN IT CANT SEE YOU
+    
+*/
+
+.navbar {
+    background: linear-gradient(to right, #F6F3CE 0%, #F6F3CE 74px, var(--white) 120px, var(--white) 100%);
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none; /*deletes the bullet points*/
+    display: flex; /*creates the flex box, so everything is on the same level*/
+
+    margin: 0; /*to get rid of the ugly line above the navbar*/
+    padding: 0;
+}
+
+.navbar ul li a {
+    /* float: left; */
+    display: flex;
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+}
+
+#logo {
+    /* square-ify */
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    /* next two lines will center the text if its in square form */
+    display: flex;
+    justify-content: center;
+
+    background-color: #F6F3CE;
+    margin-left: 10px;
+    margin: 0;
+    padding: 0;
+}
+#logo img {
+    width: 68px;
+    height: 68px;
+    object-fit: cover;
+}
+
+.navbarElemChunk {
+    display: flex;
+    margin: 1em;
+}
+
+.navbarElemChunk li {
+    padding: 1%;
+    margin-inline-start: 5%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.navbarElemChunk li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none; /* gets rid of the underline */
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-weight: 600;
+    background-color: var(--white);
+
+    transition: background-color 0.3s;
+}
+
+.navbarElemChunk li a:hover {
+    background-color: #e0e0e0;
+}
