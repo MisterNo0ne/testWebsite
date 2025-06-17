@@ -25,20 +25,35 @@
     </nav>
 
     <div class="main">
-        <div class="background-wrapper">
-            <div class="background"></div>
-        </div>
-        <div class="home">
-            <h1>THE FIGHT FOR THE GREAT SALT LAKE CONTINUES</h1>
-            <h2>The Great Salt Lake is dying. Water inflows have reduced to a trickle while our legislators spend water we don't have.</h2>
-            <h2>But there is hope.</h2>
-            <h2>With your support, we can reform our water usage and save our Great Salt Lake.</h2>
-            <div class="button-container">
-                <button><span><a href="connect.html">Get Organized!</a></span></button>
-                <button><span><a href="connect.html">Spread the Word!</a></span></button>
+        <div class="background"></div>
+        <div class="home-text:">
+            <div class="home">
+                <h1>THE FIGHT FOR THE GREAT SALT LAKE CONTINUES</h1>
+                <h2>The Great Salt Lake is dying. Water inflows have reduced to a trickle while our legislators spend water we don't have.</h2>
+                <h2>But there is hope.</h2>
+                <h2>With your support, we can reform our water usage and save our Great Salt Lake.</h2>
+                <div class="button-container">
+                    <button><span><a href="connect.html">Get Organized</a></span></button>
+                    <button><span><a href="connect.html">Learn More</a></span></button>
+                </div>
             </div>
         </div>
+
+        <div class="more-info">
+            <div class="big-image"></div>
+            <h3>Para 1</h3>
+            <p>blah</p>
+            <h3>Para 2</h3>
+            <p>blah</p>
+        </div>
     </div>
+
+    <script>
+    window.addEventListener('scroll', function () {
+        const scrolled = window.scrollY;
+        document.querySelector('.background').style.transform = `translateY(${scrolled * -0.1}px)`;
+    });
+    </script>
 </body>
 </html>
 
