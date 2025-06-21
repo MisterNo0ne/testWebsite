@@ -103,3 +103,19 @@ body {
 .navbarElemChunk li a:hover {
     background-color: #e0e0e0;
 }
+
+
+#about-section {
+    width: 100%;
+    background-color: black;
+    color: var(--white);
+    padding: 5em 0;
+    margin: 0;
+}
+
+#about-section p {
+    max-width: 83.33%;
+    position: relative;
+    left: 23vw;
+    width: 54vw;
+}
